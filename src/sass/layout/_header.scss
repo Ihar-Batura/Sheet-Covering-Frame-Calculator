@@ -1,0 +1,19 @@
+@use '../abstracts/variables' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  font-family: $font-additional;
+}
+
+.header-logo {
+  margin: 0 auto;
+  font-size: 32px;
+}
+
+@media (width < 450px) {
+  .header-logo {
+    font-size: 25px;
+  }
+}
