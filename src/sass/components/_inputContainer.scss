@@ -1,0 +1,41 @@
+@use '../abstracts/variables' as *;
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  width: 100%;
+  max-width: 450px;
+}
+
+.select {
+  width: 100%;
+  padding: 4px 8px;
+  font-size: 14px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.option {
+  color: $color-option;
+}
+
+.input {
+  width: calc(50% - 6px);
+  height: 26px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.btn {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

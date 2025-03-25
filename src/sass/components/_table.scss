@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as *;
+
+.table {
+  border-spacing: 0;
+
+  width: 100%;
+  max-width: 500px;
+  margin: 15px auto 10px;
+
+  color: $color-btn-base;
+
+  box-shadow: 0 0 6px 2px $color-btn-base-hover;
+}
+
+.table-head {
+  background-color: $color-btn-base-hover;
+}
+
+.table-head-header {
+  text-shadow: 1px 1px 2px $color-option;
+}
+
+.table-body-cell {
+  width: 33%;
+  height: 36px;
+  padding: 6px 12px;
+
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.02rem;
+}
+
+.table-body-row:nth-child(2n) {
+  .table-body-cell {
+    background-color: $color-bkg-input;
+  }
+}

@@ -8,3 +8,7 @@
 @use 'layout/wrapper' as *;
 @use 'layout/main' as *;
 @use 'layout/footer' as *;
+
+@use 'components/inputContainer' as *;
+@use 'components/resultContainer' as *;
+@use 'components/table' as *;
