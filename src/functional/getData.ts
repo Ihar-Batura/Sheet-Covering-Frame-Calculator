@@ -1,7 +1,8 @@
-async function getData<T>(filePath: string): Promise<T> {
-  const result: Response = await fetch(filePath);
-  const data: T = await result.json();
+import { IData } from '../types/types';
 
+async function getData(filePath: string): Promise<IData[]> {
+  const result: Response = await fetch(filePath);
+  const data: IData[] = await result.json();
   return data;
 }
 
