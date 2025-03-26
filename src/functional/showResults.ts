@@ -59,7 +59,7 @@ function showResults({
   tableBody.append(firstRow, secondRow, thirdRow);
 
   table.append(tableHead, tableBody);
-  const totalSum = Math.ceil(listPrice + pipeFinalPrice + fullScrewPrice);
+  const totalSum = Math.ceil(listPrice) + Math.ceil(pipeFinalPrice) + Math.ceil(fullScrewPrice);
 
   const total = createElement({ tag: 'p', classes: ['result-total'], text: `Итого: ${totalSum}` });
 
